@@ -1,0 +1,32 @@
+{
+  "app_name": "Secure Web Portal",
+  "start_url": "",
+  "allowed_domains": ["*"],
+  "splash_screen": {
+    "enabled": true,
+    "fullscreen": true,
+    "background_color": "#10233f",
+    "duration_ms": 1200,
+    "pages": [
+      { "image_url": "", "background_color": "#10233f", "duration_ms": 1200 },
+      { "image_url": "", "background_color": "#08172b", "duration_ms": 1200 },
+      { "image_url": "", "background_color": "#10233f", "duration_ms": 1200 }
+    ]
+  },
+  "onboarding": {
+    "enabled": true,
+    "fullscreen": false,
+    "skip_text": "Skip",
+    "next_text": "Next",
+    "started_text": "Get Started",
+    "pages": [
+      { "title": "সবকিছু এক জায়গায়", "message": "আপনার পোর্টালের গুরুত্বপূর্ণ কাজগুলো দ্রুত খুঁজে নিন।", "image_url": "", "background_color": "#F7F8FC", "accent_color": "#6757D9" },
+      { "title": "সহজ ও নিরাপদ", "message": "পরিষ্কার অভিজ্ঞতা এবং নিরাপদ সংযোগে কাজ করুন।", "image_url": "", "background_color": "#F4F8FF", "accent_color": "#2D74DA" },
+      { "title": "শুরু করা যাক", "message": "আপনার জন্য তৈরি অভিজ্ঞতাটি এখনই ব্যবহার করুন।", "image_url": "", "background_color": "#F8F5FF", "accent_color": "#8B5CF6" }
+    ]
+  },
+  "ui_colors": { "status_bar": "#10233f", "navigation_bar": "#08172b", "progress": "#36c6b4", "refresh": "#36c6b4", "accent": "#36c6b4" },
+  "maintenance_mode": { "enabled": false, "title": "We’ll be back soon", "message": "We are performing scheduled maintenance. Please try again shortly.", "icon": "🛠️", "retry_enabled": true },
+  "security_policies": { "https_only": false, "ssl_pinning": false, "certificate_pins": [], "block_screenshots": true, "root_detection": "warn", "emulator_detection": "warn", "debugger_detection": "block", "disable_selection": false, "allow_external_links": true, "inspect_links": false },
+  "popups_and_notifications": { "welcome_popup": { "enabled": true, "title": "স্বাগতম", "message": "Secure Web Portal-এ আপনাকে স্বাগতম।", "button_text": "ঠিক আছে" }, "push_notifications": false }
+}

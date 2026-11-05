@@ -1,0 +1,104 @@
+{
+    "app_name": "স্বাগতম",
+    "start_url": "https://agri-wealth.bugfinder.app/",
+    "allowed_domains": [
+        "agri-wealth.bugfinder.app",
+        "104.243.34.108/~ssvilfyk/"
+    ],
+    "splash_screen": {
+        "enabled": true,
+        "fullscreen": true,
+        "background_color": "#10233f",
+        "duration_ms": 5000,
+        "pages": [
+            {
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-892b4bd21524bdd09774ca61447f2810.jpg",
+                "background_color": "#10233f",
+                "duration_ms": 5000
+            },
+            {
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-935723f374a61dba76e5a91338850fa3.jpg",
+                "background_color": "#08172b",
+                "duration_ms": 5000
+            },
+            {
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-53e3f43fb665984b0d21b78fd4c81351.jpg",
+                "background_color": "#10233f",
+                "duration_ms": 5000
+            }
+        ],
+        "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-892b4bd21524bdd09774ca61447f2810.jpg"
+    },
+    "ui_colors": {
+        "status_bar": "#10233f",
+        "navigation_bar": "#08172b",
+        "progress": "#36c6b4",
+        "refresh": "#36c6b4",
+        "accent": "#36c6b4"
+    },
+    "maintenance_mode": {
+        "enabled": false,
+        "title": "We’ll be back soon",
+        "message": "We are performing scheduled maintenance. Please try again shortly.",
+        "icon": "🛠️",
+        "retry_enabled": true
+    },
+    "security_policies": {
+        "https_only": false,
+        "ssl_pinning": false,
+        "certificate_pins": [],
+        "block_screenshots": true,
+        "root_detection": "warn",
+        "emulator_detection": "warn",
+        "debugger_detection": "block",
+        "disable_selection": false,
+        "allow_external_links": true,
+        "inspect_links": true
+    },
+    "popups_and_notifications": {
+        "welcome_popup": {
+            "enabled": true,
+            "title": "Welcome",
+            "message": "Welcome back.",
+            "button_text": "ঠিক আছে"
+        },
+        "push_notifications": false
+    },
+    "onboarding": {
+        "enabled": true,
+        "fullscreen": true,
+        "skip_text": "Skip",
+        "next_text": "Next",
+        "started_text": "Get Started",
+        "pages": [
+            {
+                "title": "১১",
+                "message": "মেসেজ১",
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-0fc701211ee99d6d62d6d4b8fa68081c.jpg",
+                "background_color": "#F7F8FC",
+                "accent_color": "#6757D9"
+            },
+            {
+                "title": "হাই২",
+                "message": "হাই মেসেজ২",
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-6315c8089cfcf579b9a69f923899385d.png",
+                "background_color": "#F7F8FC",
+                "accent_color": "#6757D9"
+            },
+            {
+                "title": "৩৩",
+                "message": "মেসেজ৩",
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-af1cf098dfec643f93fb919ec2d9db4e.jpg",
+                "background_color": "#F7F8FC",
+                "accent_color": "#6757D9"
+            },
+            {
+                "title": "৪৪",
+                "message": "মেসেজ৪",
+                "image_url": "http://104.243.34.108/~ssvilfyk/api.php?file=splash-image-c8897d4312f9118e31800032d76fd6df.jpg",
+                "background_color": "#F7F8FC",
+                "accent_color": "#6757D9"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+Secure Web Portal Admin Panel — Safe Update
+
+এই archive নতুন installation-এর জন্য নয়। এটি আগে থেকে installed admin panel update করার জন্য।
+
+আপডেট করার নিয়ম:
+
+1. আগে বর্তমান panel-এর `private/` এবং `storage/` folder-এর backup নিন।
+2. Hosting File Manager-এ existing panel root খুলুন—যেখানে `app/`, `public/`, `private/`, `storage/` আছে।
+3. এই ZIP সেই panel root-এ upload করে Extract করুন এবং overwrite/replace অনুমতি দিন।
+4. `private/` বা `storage/` folder মুছবেন না এবং ZIP থেকে এমন folder তৈরি হলে ব্যবহার করবেন না। এই update archive-এ এগুলো ইচ্ছাকৃতভাবে নেই।
+5. Browser cache পরিষ্কার করে `public/admin.php` খুলুন এবং login করুন।
+6. নতুন Onboarding slider section দেখা গেলে Save changes চাপুন।
+
+Expected structure after extraction:
+
+app/common.php
+public/admin.php
+public/api.php
+public/install.php
+public/.htaccess
+private/                 (পুরনো, অক্ষত থাকবে)
+storage/                 (পুরনো, অক্ষত থাকবে)
+
+যদি document root সরাসরি `public/` folder হয়, upload/extract করার সময় archive-এর `public/` folder-এর contents existing document root-এ overwrite করুন এবং `app/` folder panel root-এ রাখুন।
+
+এই update-এর পরে নতুন করে installer চালাবেন না। Installer শুধু প্রথম installation-এর জন্য।

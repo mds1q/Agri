@@ -1,0 +1,23 @@
+cPanel deployment
+==================
+
+1. এই ZIP-এর সব ফাইল public_html-এ upload করে Extract করুন।
+2. নিশ্চিত করুন public_html/install.php সরাসরি আছে।
+3. PHP Selector থেকে PHP 8.1 বা নতুন version নির্বাচন করুন।
+4. openssl এবং fileinfo extension চালু করুন।
+5. HTTP URL খুলুন: http://আপনার-domain/install.php
+6. private/.install-token থেকে token নিয়ে admin account তৈরি করুন।
+7. Setup শেষে admin URL: http://আপনার-domain/admin.php
+
+এই cPanel package-এ HTTP access চালু করার marker আছে। HTTP-তে password ও session encrypted থাকে না; SSL চালু হলে HTTPS ব্যবহার করুন।
+
+ফাইলের গঠন:
+public_html/
+├── install.php
+├── admin.php
+├── api.php
+├── app/
+├── private/
+└── storage/
+
+এই package-এ private/config.php নেই; installer প্রথমবার সেটি তৈরি করবে।

@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "(.*\.pem)$">
+    Require all denied
+</FilesMatch>

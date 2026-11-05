@@ -1,0 +1,18 @@
+Admin Panel Root Deploy Package
+================================
+
+এই package-এ public folder-এর ফাইলগুলো সরাসরি root-এ রাখা হয়েছে:
+admin.php, api.php, install.php, .htaccess এবং .user.ini।
+
+Root-এর পাশে app/, private/ এবং storage/ folder থাকতে হবে।
+সরাসরি public_html বা hosting document root-এ পুরো package extract করুন।
+
+1. HTTPS চালু করুন।
+2. PHP 8.1+, OpenSSL, fileinfo এবং cURL extension চালু করুন।
+3. browser থেকে /install.php খুলুন।
+4. private/.install-token থেকে token নিয়ে admin username/password সেট করুন।
+5. setup শেষ হলে /admin.php খুলুন।
+6. private/ এবং storage/ কখনো আলাদা করে public URL দিয়ে expose করবেন না।
+
+এই package-এর private/config-signing-private.pem গোপন রাখুন।
+Existing installation update হলে private/ এবং storage/ backup নিয়ে code files overwrite করুন।

@@ -1,0 +1,24 @@
+Existing Root Admin Panel Update
+=================================
+
+এই ZIP আগে থেকে চালু থাকা root-layout Admin panel update করার জন্য।
+ZIP-এর ভেতরের ফাইলগুলো hosting-এর বর্তমান Admin root-এ overwrite করুন।
+
+Overwrite হবে:
+- admin.php
+- api.php
+- .htaccess
+- .user.ini
+- app/common.php
+
+এই update package-এ private/, storage/ অথবা install.php নেই। তাই existing
+admin login, signing private key, current config, credentials এবং uploaded
+images অক্ষত থাকবে। Update-এর আগে code files-এর backup রাখুন।
+
+যদি আপনার hosting-এ document root সরাসরি Admin root হয়, ZIP extract করে
+ফাইলগুলো root-এ overwrite করুন। Extract করার পরে /admin.php খুলে login করুন।
+Push credentials আবার দিতে হবে না; private/push-credentials.php থাকলে সেটি
+আগের মতোই ব্যবহৃত হবে।
+
+Server requirement: PHP 8.1+, OpenSSL, fileinfo এবং cURL extension। HTTPS
+চালু রাখুন।

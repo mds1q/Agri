@@ -1,0 +1,31 @@
+# Keystores and private signing keys
+config-signing-private.pem
+*.pem
+*.p12
+*.jks
+release-signing.properties
+
+# Private credentials and admin storage
+php-control-panel/private/
+php-control-panel/storage/
+admin-panel-root/private/
+admin-panel-root/storage/
+admin-panel-root-update/private/
+admin-panel-root-update/storage/
+
+# Build caches and local files
+.gradle/
+.kotlin/
+build/
+app/build/
+local.properties
+__pycache__/
+.and-code/
+
+# Large binary files, archives and APKs
+*.apk
+*.idsig
+*.zip
+local-downloads/
+uploads/
+backups/
